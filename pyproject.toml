@@ -1,0 +1,35 @@
+[project]
+name = "forkitech"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nekrashevich Alexander",email = "suve362@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "fastapi (>=0.115.12,<0.116.0)",
+    "alembic (>=1.15.1,<2.0.0)",
+    "asyncpg (>=0.30.0,<0.31.0)",
+    "sqlalchemy (>=2.0.39,<3.0.0)",
+    "pydantic-settings (>=2.8.1,<3.0.0)",
+    "tronpy (>=0.5.0,<0.6.0)",
+    "uvicorn (>=0.34.0,<0.35.0)",
+    "pytest-dotenv (>=0.5.2,<0.6.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+black = "^25.1.0"
+mypy = "^1.15.0"
+flake8 = "^7.1.2"
+pylint = "^3.3.6"
+isort = "^6.0.1"
+pytest-dotenv = "^0.5.2"
+pytest-asyncio = "^0.26.0"
+
